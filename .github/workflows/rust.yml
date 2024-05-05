@@ -5,8 +5,8 @@ permissions:
 
 on:
   push:
-    branches:
-      - master  # Trigger the workflow on pushes to the master branch
+    tags:
+      - 'v*'  # Only trigger when a tag is pushed
 
 jobs:
   create-release:
