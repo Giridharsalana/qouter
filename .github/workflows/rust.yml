@@ -6,7 +6,7 @@ permissions:
 on:
   push:
     tags:
-      - 'v*'  # This triggers on any tag starting with 'v'
+      - v[0-9]+.*
 
 jobs:
   create-release:
