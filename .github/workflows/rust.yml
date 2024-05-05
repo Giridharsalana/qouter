@@ -19,6 +19,7 @@ jobs:
         uses: taiki-e/create-gh-release-action@v1
         with:
           title: $version
+          branch: main
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
 
   upload-assets:
@@ -32,5 +33,5 @@ jobs:
         uses: taiki-e/upload-rust-binary-action@v1
         with:
           # Example list of binaries to build and upload. Adjust as needed.
-          bin: your_binary_name  # Comma-separated list of binary names to build and upload
+          bin: qouter  # Comma-separated list of binary names to build and upload
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
