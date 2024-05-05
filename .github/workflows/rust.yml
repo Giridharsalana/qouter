@@ -18,7 +18,7 @@ jobs:
       - name: Create GitHub Release
         uses: taiki-e/create-gh-release-action@v1
         with:
-          title: $version
+          title: $tag
           branch: main
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
 
